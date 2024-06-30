@@ -1,0 +1,149 @@
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(135deg, #0e18db, #16b2e2);
+    color: #fafafa;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3em;
+    letter-spacing: 2px;
+    font-family: 'Raleway', sans-serif;
+    animation: fadeIn 2s ease-in-out;
+}
+
+header p {
+    font-size: 1.2em;
+    margin: 10px 0 0;
+}
+
+#about {
+    background-color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#about img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px; /* Changed from 50% to 10px for square shape with slight rounding */
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#skills {
+    background-color: #f0f0f0;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#skills h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #4e54c8;
+}
+
+#skills ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+#skills li {
+    background: #4e54c8;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 25px;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+#skills li:hover {
+    background-color: #8f94fb;
+}
+
+#projects {
+    background-color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#projects h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #4e54c8;
+}
+
+.project {
+    background: #f0f0f0;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+#contact {
+    background-color: #f0f0f0;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #4e54c8;
+}
+
+#contact a {
+    color: #4e54c8;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #454141;
+    color: #40e8e5;
+    padding: 20px;
+    text-align: center;
+    font-size: 0.9em;
+    clear: both;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+.hidden {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
